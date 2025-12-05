@@ -30,13 +30,13 @@ def calculate_tax(income):
 
 
 # Main Program
-income = float(input("Enter your annual income (₹): "))
+income = float(st.number_input("Enter your annual income (₹): "))
 
 basic_tax, cess_amount, total_payable = calculate_tax(income)
         
-print("\nTotal Income Tax Payable for AY 2025-26")
-print("-------------------------------------------")
-print(f"Taxable income           :₹{income:,.2f}")
-print(f"Basic Income Tax         :₹{basic_tax:,.2f}")
-print(f"Health and Education Cess:₹{cess_amount:,.2f}")
-print(f"Total Tax Payable        : ₹{total_payable:,.2f}")
+st.write("\nTotal Income Tax Payable for AY 2025-26")
+st.write("-------------------------------------------")
+st.write(f"Taxable income           :₹{income:,.2f}")
+st.write(f"Basic Income Tax         :₹{basic_tax:,.2f}")
+st.write(f"Health and Education Cess:₹{cess_amount:,.2f}")
+st.write(f"Total Tax Payable        : ₹{total_payable:,.2f}")
