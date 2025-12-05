@@ -1,5 +1,5 @@
 import streamlit as st
-st.write("As per Old Regime")
+st.write("AS PER OLD REGIME")
 def calculate_tax(income):
     tax = 0.0  # must not be a number, not tuple
     if income <= 300000:
